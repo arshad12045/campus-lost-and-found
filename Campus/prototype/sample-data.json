@@ -1,0 +1,5 @@
+[
+  {"type":"found","title":"Black Backpack","description":"Found near library","category":"Accessories","location":"Main Library","date":"2025-11-01","contactEmail":"finder@example.com","imageUrl":"https://images.unsplash.com/photo-1514477917009-389c76a86b68?q=80&w=800&auto=format&fit=crop"},
+  {"type":"lost","title":"iPhone 12","description":"Blue case, cracked corner","category":"Electronics","location":"Cafeteria","date":"2025-11-03","contactEmail":"owner@example.com","imageUrl":"https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=800&auto=format&fit=crop"},
+  {"type":"found","title":"Calculus Book","description":"Stewart 8e","category":"Books","location":"Engineering Block","date":"2025-11-05","contactEmail":"math@campus.edu","imageUrl":"https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=800&auto=format&fit=crop"}
+]

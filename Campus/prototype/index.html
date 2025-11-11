@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campus Lost & Found - Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Campus Lost & Found</h1>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search items..." />
+      <select id="category">
+        <option value="">All Categories</option>
+        <option>Electronics</option>
+        <option>Books</option>
+        <option>Clothing</option>
+        <option>Accessories</option>
+        <option>Other</option>
+      </select>
+      <select id="type">
+        <option value="found">Found</option>
+        <option value="lost">Lost</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <section class="cards">
+      <div id="items" class="card-grid"></div>
+    </section>
+
+    <aside class="form-panel">
+      <h2>Report Item</h2>
+      <form id="reportForm">
+        <div class="row">
+          <label>Type</label>
+          <select name="type" required>
+            <option value="found">Found</option>
+            <option value="lost">Lost</option>
+          </select>
+        </div>
+        <div class="row">
+          <label>Title</label>
+          <input name="title" required />
+        </div>
+        <div class="row">
+          <label>Description</label>
+          <textarea name="description" rows="3"></textarea>
+        </div>
+        <div class="row">
+          <label>Category</label>
+          <select name="category" required>
+            <option>Electronics</option>
+            <option>Books</option>
+            <option>Clothing</option>
+            <option>Accessories</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="row">
+          <label>Location</label>
+          <input name="location" required />
+        </div>
+        <div class="row">
+          <label>Date</label>
+          <input type="date" name="date" required />
+        </div>
+        <div class="row">
+          <label>Contact Email</label>
+          <input type="email" name="contactEmail" required />
+        </div>
+        <div class="row">
+          <label>Image</label>
+          <input type="file" name="image" id="image" accept="image/*" />
+          <img id="preview" class="preview" alt="" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </aside>
+  </main>
+
+  <div id="contactModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Contact Publisher</h3>
+      <p id="contactInfo"></p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
